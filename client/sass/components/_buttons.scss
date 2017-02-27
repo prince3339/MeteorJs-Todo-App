@@ -1,0 +1,93 @@
+%button-common{
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    background-color:  map-deep-get($colors, "buttons", "white");
+
+    border: 1px solid map-deep-get($colors, "buttons", "purple");
+    outline: none;
+
+    color: map-deep-get($colors, "buttons", "purple");
+}
+
+%button-revert{
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    background-color:  map-deep-get($colors, "buttons", "purple");
+
+    //border: 1px solid map-deep-get($colors, "buttons", "white");
+    outline: none;
+
+    color: map-deep-get($colors, "buttons", "white");
+}
+
+%button-secondary{
+    @extend %button-common;
+
+    background-color:  map-deep-get($colors, "buttons", "white");
+    border: 1px solid map-deep-get($colors, "buttons", "dark-red");
+
+    color: map-deep-get($colors, "buttons", "dark-red");
+}
+
+.sapien{
+    &__icon-btn {
+        background: transparent !important;
+        border: 0 !important;
+        outline: none !important;
+    }
+    &--primary-button{
+        @extend  %button-common;
+
+        &:hover {
+            background-color:  map-deep-get($colors, "buttons", "purple");
+            color: map-deep-get($colors, "buttons", "white");
+        }
+
+        &:active {
+            background-color:  map-deep-get($colors, "buttons", "purple");
+            color: map-deep-get($colors, "buttons", "white");
+        }
+
+        &:focus {
+            background-color:  map-deep-get($colors, "buttons", "purple");
+            color: map-deep-get($colors, "buttons", "white");
+        }
+    }
+	&--primary-button-revert{
+        @extend  %button-revert;
+
+        &:hover {
+            @include mix-bg( map-deep-get($colors, "buttons", "purple"), 'black-mix', 90%);
+            color: map-deep-get($colors, "buttons", "white");
+        }
+
+        &:active {
+            @include mix-bg( map-deep-get($colors, "buttons", "purple"), 'black-mix', 90%);
+            color: map-deep-get($colors, "buttons", "white");
+        }
+
+        &:focus {
+            @include mix-bg( map-deep-get($colors, "buttons", "purple"), 'black-mix', 90%);
+			      color: map-deep-get($colors, "buttons", "white");
+        }
+    }
+    &--secondary-button{
+        @extend  %button-secondary;
+
+        &:hover {
+            @include mix-bg( map-deep-get($colors, "buttons", "dark-red"), 'black-mix', 90%);
+        }
+
+        &:active {
+            @include mix-bg( map-deep-get($colors, "buttons", "dark-red"), 'black-mix', 90%);
+            color: map-deep-get($colors, "buttons", "white");
+        }
+
+        &:focus {
+            @include mix-bg( map-deep-get($colors, "buttons", "dark-red"), 'black-mix', 90%);
+            color: map-deep-get($colors, "buttons", "white");
+        }
+    }
+}
