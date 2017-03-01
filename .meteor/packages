@@ -27,3 +27,5 @@ kadira:flow-router
 accounts-ui
 accounts-password
 alanning:roles
+kadira:blaze-layout
+reactive-dict

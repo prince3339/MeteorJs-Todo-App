@@ -34,8 +34,10 @@
 // common components
 @import 'components/divider';
 @import 'components/buttons';
+@import 'components/form';
 // Meteor app components
 //Meteor app pages
+@import 'pages/todo';
 //hacks
 @import 'hacks/hacks';
 @import 'vendors/material-icon';

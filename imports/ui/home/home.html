@@ -1,0 +1,18 @@
+<template name="home">
+    <div class="container">
+      {{#if currentUser}}
+        {{> loggedInContent}}
+        {{else}}
+        {{> loggedOutContent}}
+      {{/if}}
+    </div>
+</template>
+
+
+<template name="loggedOutContent">
+    <h3 class="text-center">Login to see your desired content!!!</h3>
+</template>
+
+<template name="loggedInContent">
+    <h1 class="text-center">Welcome to Meteor!</h1>
+</template>
