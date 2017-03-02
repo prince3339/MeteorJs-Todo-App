@@ -9,6 +9,7 @@ import './todo.html';
 
 Template.todo.onCreated(function todoOnCreated() {
   this.state = new ReactiveDict();
+  Meteor.subscribe('tasks');
 });
 
 Template.todo.helpers({
