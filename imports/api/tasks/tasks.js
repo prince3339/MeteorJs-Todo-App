@@ -28,10 +28,10 @@ Meteor.methods({
     }
 
     Tasks.insert({
-      text,
+      text: text,
       createdAt: new Date(),
       owner: this.userId,
-      username: Meteor.users.findOne(this.userId).username,
+      username: Meteor.users.findOne(this.userId).username || Meteor.users.findOne(this.userId).profile.name,
     });
   },
   'tasks.remove'(taskId) {

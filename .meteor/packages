@@ -28,3 +28,7 @@ accounts-password
 alanning:roles
 kadira:blaze-layout
 reactive-dict
+accounts-facebook
+facebook-config-ui
+accounts-google
+google-config-ui
