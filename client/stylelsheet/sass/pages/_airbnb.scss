@@ -1,0 +1,71 @@
+.airbnb{
+  &__left {
+    position: relative;
+  }
+  &__listing{
+    @include breakpoint(xs) {
+      width: 100% !important;
+    }
+    &__img-container{
+      position: relative;
+    }
+    &__wishlist-heart {
+      position: absolute;
+      right: 1.5rem;
+      top: 1.5rem;
+
+      color: map-deep-get($colors, 'foreground', 'white');
+
+      z-index: 10;
+
+      i {
+        &:hover {
+          color: map-deep-get($colors, 'secondary', 'base');
+        }
+      }
+    }
+    &__slider {
+      position: absolute;
+
+      width: 100%;
+      height: 100%;
+
+      z-index: 9;
+
+      color: map-deep-get($colors, 'foreground', 'white');
+    }
+
+    &__header {
+      height: 8rem;
+
+      // -webkit-transition: all 0.2s;
+      // -moz-transition: all 0.2s;
+      // -ms-transition: all 0.2s;
+      // transition: all 0.2s;
+      &--sticky {
+        position: fixed;
+
+        width: 100%;
+        background: map-deep-get($colors, 'foreground', 'white');
+
+        border-bottom: 1px solid #dce0e0;
+
+        // -webkit-transition: all 0.2s;
+        // -moz-transition: all 0.2s;
+        // -ms-transition: all 0.2s;
+        // transition: all 0.2s;
+        z-index: 25;
+
+        @include breakpoint(gt-sm) {
+          width: 65.8% !important;
+        }
+      }
+
+      &__left {
+        @include breakpoint(gt-sm-max) {
+          display: none !important;
+        }
+      }
+    }
+  }
+}

@@ -1,1 +1,2 @@
-import './accounts-config.js'; 
+import './accounts-config.js';
+import './googleMap-config.js';

@@ -1,0 +1,54 @@
+.airbnb {
+  &__search {
+    padding-left: 0 !important;
+    input {
+      padding-left: 10 !important;
+
+      box-shadow: none !important;
+      border: 0 !important;
+    }
+
+    >div {
+      display: -webkit-flex !important;
+      display: -ms-flex !important;
+      display: flex !important;
+      flex-direction: row !important;
+    }
+
+    @include breakpoint(767) {
+      padding-left: 1.6rem !important;
+      padding-right: 1.6rem !important;
+      
+      margin-top: 0 !important;
+    };
+  }
+  &__nav {
+    background: map-deep-get($colors, 'foreground', 'white') !important;
+    border-top: 0 !important;
+  }
+}
+
+
+#login-dropdown-list {
+    right: 0 !important;
+    left: initial !important;
+}
+
+.navbar-collapse {
+  &.collapse {
+    @include breakpoint(gt-sm) {
+      padding-left: 0 !important;
+
+      display: -webkit-flex !important;
+      display: -ms-flex !important;
+      display: flex !important;
+      flex-direction: row !important;
+    };
+  }
+}
+
+.navbar-header {
+    @include breakpoint(768min) {
+      margin-right: 1.6rem !important;
+    };
+}

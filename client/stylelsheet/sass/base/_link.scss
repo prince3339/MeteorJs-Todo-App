@@ -1,27 +1,31 @@
 a {
     //@include font-weight-color(700);
-    color: map-deep-get($colors, "primary", "base");
+    color: map-deep-get($colors, "foreground", "base");
 
-    text-decoration: none;
+    text-decoration: none !important;
 
     transition: color 0.2s linear 0.1s;
 
     &:hover {
-        color: map-deep-get($colors, "primary", "base_hover");
+      color: map-deep-get($colors, "foreground", "base");
 
-        transition: color 0.2s linear 0.1s;
+      opacity: 0.80;
+      transition: color 0.2s linear 0.1s;
     }
 
     &:active {
-      color: map-deep-get($colors, "primary", "base_hover");
+      color: map-deep-get($colors, "foreground", "base");
 
+      opacity: 0.80;
       transition: color 0.2s linear 0.1s;
     }
 
     &:focus {
-        color: map-deep-get($colors, "primary", "base_hover");
-        outline: 0;
-        text-decoration: none !important;
-        transition: color 0.2s linear 0.1s;
+      color: map-deep-get($colors, "foreground", "base");
+
+      opacity: 0.80;
+      outline: 0;
+      text-decoration: none !important;
+      transition: color 0.2s linear 0.1s;
     }
 }

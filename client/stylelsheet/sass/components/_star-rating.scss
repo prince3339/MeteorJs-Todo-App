@@ -1,0 +1,8 @@
+.stars-rating {
+  .active {
+    color: map-deep-get($colors, "secondary", "base_hover") !important;
+  }
+  .current-rating{
+    color: map-deep-get($colors, "secondary", "base") !important;
+  }
+}

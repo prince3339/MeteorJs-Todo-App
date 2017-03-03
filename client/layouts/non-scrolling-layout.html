@@ -1,0 +1,8 @@
+<template name="nonScrollingLayout">
+    <div class="layout-column full-height">
+      {{> navBar}}
+      <div class="flex non-scrolling">
+        {{> Template.dynamic template=main}}
+      </div>
+    </div>
+</template>

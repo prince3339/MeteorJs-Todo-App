@@ -28,13 +28,26 @@
             @content;
         }
     }
+
+    @else if $class==767 {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $class==768min {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+
     @else if $class==gt-sm {
         @media (min-width: 992px) {
             @content;
         }
     }
     @else if $class==gt-sm-max {
-        @media (max-width: 992px) {
+        @media (max-width: 991px) {
             @content;
         }
     }

@@ -1,27 +1,48 @@
 <template name="navBar">
     <header>
-      <nav class="navbar navbar-default remove_mrgn--bottom">
-        <div class="container">
+      <nav class="navbar navbar-default remove_mrgn--bottom airbnb__nav">
+        <div class="container full-width">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <div class="navbar-header border-right">
+            <button type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand pad_vert--0 pad_hori--20" href="{{homeUrl}}">
-              <img class="make-round square-5"
-                   src="{{absoluteURL}}/assets/placeholder.jpg" alt="logo"></a>
+            <a class="navbar-brand padding-0" href="#">
+              <img class="width-50 height-50"
+                   src="{{absoluteURL}}/assets/logos/airbnb-logo.png" alt="logo"></a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="collapse navbar-collapse"
+               id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-left flex airbnb__search">
+              <div class="form-group full-width layout-align-start-center">
+                <label for="airbnb_search"
+                       class="margin-0">
+                  <i class="fa fa-search font-size-fixed-18 opacity-60"
+                     aria-hidden="true"></i>
+                </label>
+                <input id="airbnb_search"
+                       type="text"
+                       class="form-control full-width"
+                       placeholder="Search">
+              </div>
+            </form>
             <ul class="nav navbar-nav navbar-right">
               <li class="display-block">
                     <a href="/todo">Todo list</a>
               </li>
-              <li class="display-block padding-v-15">
+              <li class="display-block">
+                    <a href="/airbnb">airbnb</a>
+              </li>
+              <li class="display-block padding-15 line-height-fixed-20 opacity-80 z-index-30">
                     {{> loginButtons}}
               </li>
             </ul>

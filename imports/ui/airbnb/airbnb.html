@@ -1,0 +1,348 @@
+<template name="airbnb">
+    <section class="container full-width padding-0">
+      <div class="row margin-h-0 flex full-height">
+        <div class="col-md-8 full-height overflow-auto airbnb__left padding-h-0">
+          <header class="layout-row layout-align-space-between-center padding-h-24 padding-v-10 margin-bottom-5 airbnb__listing__header">
+            <div class="layout-row layout-align-start-start flex airbnb__listing__header__left">
+              <i class="fa fa-usd font-size-fixed-14 opacity-80" aria-hidden="true"></i>
+              <p class="font-size-fixed-14 opacity-80 padding-left-5">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+              </p>
+            </div>
+            <span class="flex text-right font-size-fixed-14 text-bold opacity-80">
+              Dhaka-1206
+            </span>
+          </header>
+          <div class="airbnb__listing__container layout-row-gt-xs layout-wrap full-width padding-h-12">
+            <section class="airbnb__listing width-50-per padding-h-12 margin-bottom-24">
+              <div class="airbnb__listing__img-container">
+                <div class="airbnb__listing__wishlist-heart">
+                  <button type="button"
+                          name="button"
+                          class="airbnb__icon-btn">
+                          <i class="fa fa-heart-o font-size-fixed-34" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <div class="">
+                  <div class="airbnb__listing__slider layout-row layout-align-space-between-center">
+                    <button type="button"
+                            name="button"
+                            class="airbnb__icon-btn full-height padding-h-20">
+                            <i class="fa fa-angle-left font-size-fixed-54" aria-hidden="true"></i>
+                    </button>
+                    <button type="button"
+                            name="button"
+                            class="airbnb__icon-btn full-height padding-h-20">
+                            <i class="fa fa-angle-right font-size-fixed-54" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <a href="#" class="display-block" title="listing detail link">
+                    <figure class="responsive-img">
+                      <img src="/assets/Vue_Hohneck_16-9.jpg"
+                        alt="airbnb listing picture">
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="margin-top-5">
+                <div class="layout-row layout-align-space-between-center">
+                   <a href="#">
+                     20$
+                   </a>
+                   <div class="layout-row layout-align-start-center">
+                     {{> starsRating id='rating' rating=3.5 class='mystar' mutable=true}}
+                     <span class="font-size-fixed-12">5 reviews</span>
+                   </div>
+                </div>
+                <div class="margin-top-5">
+                  <h3 class="margin-0 font-size-fixed-16">
+                    Modern and homely, luxury  3 bed apart
+                  </h3>
+                  <div class="layout-row font-size-fixed-14 opacity-70 margin-top-5">
+                    <span>Room</span>
+                    <span>.</span>
+                    <span>1 bed</span>
+                    <span>.</span>
+                    <span>2 bath</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="airbnb__listing width-50-per padding-h-12 margin-bottom-24">
+              <div class="airbnb__listing__img-container">
+                <div class="airbnb__listing__wishlist-heart">
+                  <button type="button"
+                          name="button"
+                          class="airbnb__icon-btn">
+                          <i class="fa fa-heart-o font-size-fixed-34" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <div class="">
+                  <div class="airbnb__listing__slider layout-row layout-align-space-between-center">
+                    <button type="button"
+                            name="button"
+                            class="airbnb__icon-btn full-height padding-h-20">
+                            <i class="fa fa-angle-left font-size-fixed-54" aria-hidden="true"></i>
+                    </button>
+                    <button type="button"
+                            name="button"
+                            class="airbnb__icon-btn full-height padding-h-20">
+                            <i class="fa fa-angle-right font-size-fixed-54" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <a href="#" class="display-block" title="listing detail link">
+                    <figure class="responsive-img">
+                      <img src="/assets/Vue_Hohneck_16-9.jpg"
+                        alt="airbnb listing picture">
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="margin-top-5">
+                <div class="layout-row layout-align-space-between-center">
+                   <a href="#">
+                     20$
+                   </a>
+                   <div class="layout-row layout-align-start-center">
+                     {{> starsRating id='rating' rating=3.5 class='mystar' mutable=true}}
+                     <span class="font-size-fixed-12">5 reviews</span>
+                   </div>
+                </div>
+                <div class="margin-top-5">
+                  <h3 class="margin-0 font-size-fixed-16">
+                    Modern and homely, luxury  3 bed apart
+                  </h3>
+                  <div class="layout-row font-size-fixed-14 opacity-70 margin-top-5">
+                    <span>Room</span>
+                    <span>.</span>
+                    <span>1 bed</span>
+                    <span>.</span>
+                    <span>2 bath</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="airbnb__listing width-50-per padding-h-12 margin-bottom-24">
+              <div class="airbnb__listing__img-container">
+                <div class="airbnb__listing__wishlist-heart">
+                  <button type="button"
+                          name="button"
+                          class="airbnb__icon-btn">
+                          <i class="fa fa-heart-o font-size-fixed-34" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <div class="">
+                  <div class="airbnb__listing__slider layout-row layout-align-space-between-center">
+                    <button type="button"
+                            name="button"
+                            class="airbnb__icon-btn full-height padding-h-20">
+                            <i class="fa fa-angle-left font-size-fixed-54" aria-hidden="true"></i>
+                    </button>
+                    <button type="button"
+                            name="button"
+                            class="airbnb__icon-btn full-height padding-h-20">
+                            <i class="fa fa-angle-right font-size-fixed-54" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <a href="#" class="display-block" title="listing detail link">
+                    <figure class="responsive-img">
+                      <img src="/assets/Vue_Hohneck_16-9.jpg"
+                        alt="airbnb listing picture">
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="margin-top-5">
+                <div class="layout-row layout-align-space-between-center">
+                   <a href="#">
+                     20$
+                   </a>
+                   <div class="layout-row layout-align-start-center">
+                     {{> starsRating id='rating' rating=3.5 class='mystar' mutable=true}}
+                     <span class="font-size-fixed-12">5 reviews</span>
+                   </div>
+                </div>
+                <div class="margin-top-5">
+                  <h3 class="margin-0 font-size-fixed-16">
+                    Modern and homely, luxury  3 bed apart
+                  </h3>
+                  <div class="layout-row font-size-fixed-14 opacity-70 margin-top-5">
+                    <span>Room</span>
+                    <span>.</span>
+                    <span>1 bed</span>
+                    <span>.</span>
+                    <span>2 bath</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="airbnb__listing width-50-per padding-h-12 margin-bottom-24">
+              <div class="airbnb__listing__img-container">
+                <div class="airbnb__listing__wishlist-heart">
+                  <button type="button"
+                          name="button"
+                          class="airbnb__icon-btn">
+                          <i class="fa fa-heart-o font-size-fixed-34" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <div class="">
+                  <div class="airbnb__listing__slider layout-row layout-align-space-between-center">
+                    <button type="button"
+                            name="button"
+                            class="airbnb__icon-btn full-height padding-h-20">
+                            <i class="fa fa-angle-left font-size-fixed-54" aria-hidden="true"></i>
+                    </button>
+                    <button type="button"
+                            name="button"
+                            class="airbnb__icon-btn full-height padding-h-20">
+                            <i class="fa fa-angle-right font-size-fixed-54" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <a href="#" class="display-block" title="listing detail link">
+                    <figure class="responsive-img">
+                      <img src="/assets/Vue_Hohneck_16-9.jpg"
+                        alt="airbnb listing picture">
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="margin-top-5">
+                <div class="layout-row layout-align-space-between-center">
+                   <a href="#">
+                     20$
+                   </a>
+                   <div class="layout-row layout-align-start-center">
+                     {{> starsRating id='rating' rating=3.5 class='mystar' mutable=true}}
+                     <span class="font-size-fixed-12">5 reviews</span>
+                   </div>
+                </div>
+                <div class="margin-top-5">
+                  <h3 class="margin-0 font-size-fixed-16">
+                    Modern and homely, luxury  3 bed apart
+                  </h3>
+                  <div class="layout-row font-size-fixed-14 opacity-70 margin-top-5">
+                    <span>Room</span>
+                    <span>.</span>
+                    <span>1 bed</span>
+                    <span>.</span>
+                    <span>2 bath</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="airbnb__listing width-50-per padding-h-12 margin-bottom-24">
+              <div class="airbnb__listing__img-container">
+                <div class="airbnb__listing__wishlist-heart">
+                  <button type="button"
+                          name="button"
+                          class="airbnb__icon-btn">
+                          <i class="fa fa-heart-o font-size-fixed-34" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <div class="">
+                  <div class="airbnb__listing__slider layout-row layout-align-space-between-center">
+                    <button type="button"
+                            name="button"
+                            class="airbnb__icon-btn full-height padding-h-20">
+                            <i class="fa fa-angle-left font-size-fixed-54" aria-hidden="true"></i>
+                    </button>
+                    <button type="button"
+                            name="button"
+                            class="airbnb__icon-btn full-height padding-h-20">
+                            <i class="fa fa-angle-right font-size-fixed-54" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <a href="#" class="display-block" title="listing detail link">
+                    <figure class="responsive-img">
+                      <img src="/assets/Vue_Hohneck_16-9.jpg"
+                        alt="airbnb listing picture">
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="margin-top-5">
+                <div class="layout-row layout-align-space-between-center">
+                   <a href="#">
+                     20$
+                   </a>
+                   <div class="layout-row layout-align-start-center">
+                     {{> starsRating id='rating' rating=3.5 class='mystar' mutable=true}}
+                     <span class="font-size-fixed-12">5 reviews</span>
+                   </div>
+                </div>
+                <div class="margin-top-5">
+                  <h3 class="margin-0 font-size-fixed-16">
+                    Modern and homely, luxury  3 bed apart
+                  </h3>
+                  <div class="layout-row font-size-fixed-14 opacity-70 margin-top-5">
+                    <span>Room</span>
+                    <span>.</span>
+                    <span>1 bed</span>
+                    <span>.</span>
+                    <span>2 bath</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="airbnb__listing width-50-per padding-h-12 margin-bottom-24">
+              <div class="airbnb__listing__img-container">
+                <div class="airbnb__listing__wishlist-heart">
+                  <button type="button"
+                          name="button"
+                          class="airbnb__icon-btn">
+                          <i class="fa fa-heart-o font-size-fixed-34" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <div class="">
+                  <div class="airbnb__listing__slider layout-row layout-align-space-between-center">
+                    <button type="button"
+                            name="button"
+                            class="airbnb__icon-btn full-height padding-h-20">
+                            <i class="fa fa-angle-left font-size-fixed-54" aria-hidden="true"></i>
+                    </button>
+                    <button type="button"
+                            name="button"
+                            class="airbnb__icon-btn full-height padding-h-20">
+                            <i class="fa fa-angle-right font-size-fixed-54" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <a href="#" class="display-block" title="listing detail link">
+                    <figure class="responsive-img">
+                      <img src="/assets/Vue_Hohneck_16-9.jpg"
+                        alt="airbnb listing picture">
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="margin-top-5">
+                <div class="layout-row layout-align-space-between-center">
+                   <a href="#">
+                     20$
+                   </a>
+                   <div class="layout-row layout-align-start-center">
+                     {{> starsRating id='rating' rating=3.5 class='mystar' mutable=true}}
+                     <span class="font-size-fixed-12">5 reviews</span>
+                   </div>
+                </div>
+                <div class="margin-top-5">
+                  <h3 class="margin-0 font-size-fixed-16">
+                    Modern and homely, luxury  3 bed apart
+                  </h3>
+                  <div class="layout-row font-size-fixed-14 opacity-70 margin-top-5">
+                    <span>Room</span>
+                    <span>.</span>
+                    <span>1 bed</span>
+                    <span>.</span>
+                    <span>2 bath</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="col-md-4 padding-0 full-height">
+          {{> airbnbMap}}
+        </div>
+      </div>
+    </section>
+</template>

@@ -3,13 +3,14 @@
 /// @access public
 $colors: (
     'primary': (
-        'base': rgba(137, 93, 249, 0.64),
-        'base_hover':  #885BF9,
+        'base': #ff5a5f,
+        'base_hover': rgba(255, 90, 95, 0.64),
         'dashboard-base': #dc7c53
     ),
 
     'secondary': (
-        'base': #4C191B
+        'base': rgb(0, 166, 153),
+        'base_hover': rgba(0, 166, 153, .50)
     ),
 
     'accent': (
