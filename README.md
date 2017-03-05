@@ -5,7 +5,7 @@ MeteorJs Web Application
 2. Download this repo.
 3. Unzip and then browse to meteorjs-dev-master folder where you'll see project folder/files structured like this: 
    1. .meteor
-   2  client
+   2.  client
    3. imports
    4. public
    5. server
